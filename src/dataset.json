@@ -1,0 +1,70 @@
+{
+    "init": {
+        "answers": [
+            { "content": "仕事を依頼したい", "nextId": "job_offer" },
+            { "content": "買い物がしたい", "nextId": "shopping" },
+            { "content": "製作者の経歴が知りたい", "nextId": "career" }
+        ],
+        "question": "こんにちは！ご用件はなんでしょうか？"
+    },
+    "job_offer": {
+        "answers": [
+            { "content": "Webサイトを制作してほしい", "nextId": "website" },
+            { "content": "Webアプリを開発してほしい", "nextId": "webapp" },
+            {
+                "content": "自動化ツールを作ってほしい",
+                "nextId": "automation_tool"
+            },
+            { "content": "その他", "nextId": "other_jobs" }
+        ],
+        "question": "どのようなお仕事でしょうか？"
+    },
+    "website": {
+        "answers": [
+            { "content": "問い合わせる", "nextId": "contact" },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "Webサイト細作についてですね。コチラからお問い合わせできます。"
+    },
+    "webapp": {
+        "answers": [
+            { "content": "問い合わせる", "nextId": "contact" },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "Webアプリ開発についてですね。コチラからお問い合わせできます。"
+    },
+    "automation_tool": {
+        "answers": [
+            { "content": "問い合わせる", "nextId": "contact" },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "自動化ツール開発についてですね。コチラからお問い合わせできます。"
+    },
+    "other_jobs": {
+        "answers": [
+            { "content": "問い合わせる", "nextId": "contact" },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "その他についてですね。コチラからお問い合わせできます。"
+    },
+    "shopping": {
+        "answers": [
+            {
+                "content": "買い物をする",
+                "nextId": "https://second-d0x1qk4px-ken2122.vercel.app/"
+            },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "買い物ですね。コチラから専用サイトにアクセスできます。"
+    },
+    "career": {
+        "answers": [
+            {
+                "content": "ポートフォリオを見る",
+                "nextId": "https://www.resume.id/_2122"
+            },
+            { "content": "最初の質問に戻る", "nextId": "init" }
+        ],
+        "question": "製作者の経歴ですね。コチラからポートフォリオにアクセスできるので、ぜひご覧になってください。"
+    }
+}
